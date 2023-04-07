@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import CustomButton from "./CustomButton";
+import CustomButton from './CustomButton';
 
 const FilePicker = ({ file, setFile, readFile }) => {
   return (
@@ -17,7 +17,7 @@ const FilePicker = ({ file, setFile, readFile }) => {
         </label>
 
         <p className="mt-2 text-gray-500 text-xs truncate">
-          {file === "" ? "No file selected" : file.name}
+          {file === '' ? 'No file selected' : file.name}
         </p>
       </div>
 
@@ -25,13 +25,13 @@ const FilePicker = ({ file, setFile, readFile }) => {
         <CustomButton
           type="outline"
           title="Logo"
-          handleClick={() => readFile("logo")}
+          handleClick={() => readFile('logo')}
           customStyles="text-xs"
         />
         <CustomButton
           type="filled"
           title="Full"
-          handleClick={() => readFile("full")}
+          handleClick={() => readFile('full')}
           customStyles="text-xs"
         />
       </div>
